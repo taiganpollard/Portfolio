@@ -1,0 +1,121 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+a { 
+    color: white;
+    text-decoration: none;
+}
+img  { 
+    width: 200px
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+padding: 25px 9%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.navbar ul { 
+display: flex;
+}
+
+.navbar ul li { 
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a { 
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li:hover a, .navbar ul li:active a {
+    color: teal;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: white;
+}
+
+.home-content h1 { 
+    font-size: 60px;
+}
+.home-content h2 { 
+    font-size: 32px;
+    margin-top: -10px;
+}
+
+.home-content p { 
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+
+.home-content .btn-sci { 
+    display: flex;
+    align-items: center;
+
+}
+
+.btn { 
+    display: inline-block;
+    padding: 10px 30px;
+    background: teal;
+    border: 2px solid teal;
+    border-radius: 40px;
+    box-shadow: 0 0 10px teal;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.btn:hover { 
+    background: transparent;
+    color: grey;
+    box-shadow: none;
+
+}
+
+.home-content .btn-sci .sci { 
+    margin-left: 20px;
+}
+
+.home-content .btn-sci .sci a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid teal;
+    border-radius: 50%;
+    font-size: 20px;
+    color: teal;
+    margin: 0 8px;
+    transition: .5s;
+}
+
+.home-content .btn-sci .sci a:hover { 
+    background: teal;
+    color: grey;
+    box-shadow: 0 0 10px teal;
+}
